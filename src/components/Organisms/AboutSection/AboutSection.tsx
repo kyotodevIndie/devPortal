@@ -2,7 +2,11 @@ import { Button, Flex, Image, Stack, Text } from "@chakra-ui/react";
 
 export default function AboutSection() {
   return (
-    <Stack minH={"70vh"} direction={{ base: "column", md: "row" }}>
+    <Stack
+      minH={"70vh"}
+      direction={{ base: "column", xl: "row", "2xl": "row" }}
+      align={{ base: "center", xl: "none", "2xl": "none" }}
+    >
       <Flex mx={"20"} flex={1} align={"center"} justify={"flex-start"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Text
@@ -37,8 +41,14 @@ export default function AboutSection() {
         <Image
           mt={"70px"}
           alt={"Login Image"}
-          position={"absolute"}
+          position={{
+            base: "relative",
+            xl: "absolute",
+            "2xl": "absolute",
+          }}
+          right={{ base: "0", xl: "10vw", "2xl": "10vw" }}
           src={"assets/images/aboutSectionImage.svg"}
+          w={{ base: "300px", xl: "auto", "2xl": "auto" }}
         />
       </Flex>
     </Stack>

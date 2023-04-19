@@ -7,16 +7,20 @@ export const theme = extendTheme({
     primaryText: '#59031B',
     primaryDark: '#741029',
     secondaryText: '#FFE4B3',
+    terciaryText: '#363536',
     transparent: 'transparent',
     black: '#000',
     white: '#fff',
     orange: '#F68B1F',
+    yellow: '#FFE4B3',
     gray: {
       20: '#EEEEEE',
       30: '#DADADA',
       40: '#757575',
-      50: '#4D4D4D'
+      50: '#57585A',
+      60: '#4D4D4D'
     },
+    
   },
   fonts: {
     body: `'Heebo', sans-serif`,

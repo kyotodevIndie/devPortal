@@ -998,11 +998,6 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.36.0.tgz#9837f768c03a1e4a30bd304a64fb8844f0e72efe"
   integrity sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==
 
-"@fontsource/heebo@^4.5.15":
-  version "4.5.15"
-  resolved "https://registry.yarnpkg.com/@fontsource/heebo/-/heebo-4.5.15.tgz#5e5542d9fa9d6560eb95dfca0a444299e9b1e4c1"
-  integrity sha512-ms6Z2d7czWiOC50oIX13iw4hJ73i7VLuJRP5LOkcLe+4UCBKm6wxhd6k3pEQ0B8Cgio1gCWiazIgS3SlS1UuAg==
-
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"

@@ -13,7 +13,7 @@ interface ButtonDefaultProps {
   w?: string;
 }
 
-const ButtonDefault = ({
+function ButtonDefault({
   children,
   leftIcon,
   rightIcon,
@@ -23,7 +23,7 @@ const ButtonDefault = ({
   color,
   fontSize,
   w,
-}: ButtonDefaultProps) => {
+}: ButtonDefaultProps) {
   return (
     <Button
       fontWeight={"normal"}
@@ -41,6 +41,6 @@ const ButtonDefault = ({
       {children}
     </Button>
   );
-};
+}
 
 export default ButtonDefault;

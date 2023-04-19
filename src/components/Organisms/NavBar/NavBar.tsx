@@ -11,7 +11,7 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
+  Image,
   useDisclosure,
 } from "@chakra-ui/react";
 import {
@@ -49,14 +49,12 @@ export default function NavBar() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={"white"}
-          >
-            Logo
-          </Text>
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "start" }}
+          align={"center"}
+        >
+          <Image src="assets/images/logo.svg" alt={"logo"} width={"120px"} />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -73,13 +71,21 @@ export default function NavBar() {
             <ButtonDefault
               href={"#"}
               fontSize={"lg"}
-              // leftIcon={uri "/assets/icons/signupIcon.svg"}
+              leftIcon={
+                <Image src="/assets/icons/signupIcon.svg" alt="signup icon" />
+              }
             >
               Cadatre-se
             </ButtonDefault>
           </Box>
           <Box display={{ base: "none", md: "flex" }}>
-            <ButtonDefault href={"#"} fontSize={"lg"}>
+            <ButtonDefault
+              href={"#"}
+              fontSize={"lg"}
+              leftIcon={
+                <Image src="/assets/icons/login.svg" alt="login icon" />
+              }
+            >
               Acesse sua conta
             </ButtonDefault>
           </Box>
@@ -247,14 +253,19 @@ const NAV_ITEMS: Array<NavItem> = [
     label: `Catálogo de API's`,
     children: [
       {
-        label: "Mussum Ipsum 1",
+        label: "Pix",
         subLabel: "cacilds vidis litro abertis.",
-        href: "#",
+        href: "/pix",
       },
       {
-        label: "Mussum Ipsum 2",
+        label: "Open Finance",
         subLabel: "Sapien in monti palavris ",
-        href: "#",
+        href: "/openFinance",
+      },
+      {
+        label: "Corporativo",
+        subLabel: "qui num significa nadis ",
+        href: "/corporative",
       },
     ],
   },

@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Icon,
+  Image,
   Stack,
   Text,
   useColorModeValue,
@@ -25,9 +26,8 @@ interface CardProps {
 const Card = ({ heading, description, icon, href }: CardProps) => {
   return (
     <Box
-      maxW={{ base: "full", md: "275px" }}
       background={"white"}
-      w={"full"}
+      w={"350px"}
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
@@ -39,15 +39,13 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           h={16}
           align={"center"}
           justify={"center"}
-          color={"primary"}
           rounded={"full"}
-          bg={"gray.100"}
         >
           {icon}
         </Flex>
         <Box mt={2}>
           <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={"sm"}>
+          <Text mt={4} fontSize={"lg"}>
             {description}
           </Text>
         </Box>
@@ -74,18 +72,18 @@ export default function ServicesJumbotron() {
         </Box>
       </Stack>
 
-      <Container maxW={"5xl"} mt={12}>
+      <Container maxW={"90%"} mt={12} mx={20}>
         <Flex justify={"center"} flexDir={"column"} align={"center"}>
           <Flex flexWrap="wrap" gridGap={6} justify="center" mb={12}>
             <Card
               heading={"Pix"}
-              icon={<Icon as={SiPix} w={10} h={10} />}
+              icon={<Image src="assets/icons/pixIcon.svg" />}
               description={`A API PIX viabiliza o recebimento de cobranças de forma imediata, para por exemplo, pontos de venda em lojas e soluções para comércio eletrônico.`}
               href={"#"}
             />
             <Card
               heading={"Open Finance"}
-              icon={<Icon as={SiPix} w={10} h={10} />}
+              icon={<Image src="/assets/icons/financeIcon.svg" />}
               description={
                 "A API PIX viabiliza o recebimento de cobranças de forma imediata, para por exemplo, pontos de venda em lojas e soluções para comércio eletrônico."
               }
@@ -93,7 +91,7 @@ export default function ServicesJumbotron() {
             />
             <Card
               heading={"Corporativo"}
-              icon={<Icon as={SiPix} w={10} h={10} />}
+              icon={<Image src="/assets/icons/accountGroup.svg" />}
               description={
                 "A API PIX viabiliza o recebimento de cobranças de forma imediata, para por exemplo, pontos de venda em lojas e soluções para comércio eletrônico."
               }
