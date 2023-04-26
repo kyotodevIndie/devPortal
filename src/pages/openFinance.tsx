@@ -36,13 +36,16 @@ const processes = [
 ];
 
 const infos = {
-  title: "API PIX",
+  title: "Open finance PIX",
   description: `O Pix pode ser utilizado 24 horas por dia, todos os dias do ano. Basta que o usuário tenha acesso à internet no momento da transação. E, além de transferir valores, com o Pix também é possível fazer pagamentos a estabelecimentos.`,
   descriptionStrong:
     "Qualquer negócio representado por uma Pessoa Jurídica que possua chave PIX cadastrada no BNB faz parte do nosso público alvo.",
 };
 
 const heroInfos = {
+  headerTitle: "Open finance",
+  headerDescription: "Compartilhamento de dados bancários.",
+  headerColor: "terciaryText",
   title: "Open finance",
   version: "1.0.41",
   description:

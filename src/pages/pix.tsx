@@ -2,6 +2,17 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 import ServicePage from "@/components/Organisms/ServicePage/ServicePage";
 
+const heroInfos = {
+  headerTitle: "Pix BNB",
+  headerDescription: "Transferências e pagamentos de forma prática e rápida.",
+  headerColor: "primary",
+  title: "PIX",
+  version: "1.0.41",
+  description:
+    " A solução API Pix Cobrança possibilita a geração dinâmica de QR Codes dinâmicos para iniciação de pagamentos e verificação de liquidações dos mesmos pelos lojistas e fornecedores (usuários recebedores).",
+  tags: ["Pix", "Pagamentos", "Recebimentos"],
+};
+
 const resources = [
   "Gerenciamento de notificações pelo recebedor de Pix associado à cobrança;",
   "Criação ou revisão de cobranças com identificação única;",
@@ -40,14 +51,6 @@ const infos = {
   description: `O Pix pode ser utilizado 24 horas por dia, todos os dias do ano. Basta que o usuário tenha acesso à internet no momento da transação. E, além de transferir valores, com o Pix também é possível fazer pagamentos a estabelecimentos.`,
   descriptionStrong:
     "Qualquer negócio representado por uma Pessoa Jurídica que possua chave PIX cadastrada no BNB faz parte do nosso público alvo.",
-};
-
-const heroInfos = {
-  title: "PIX",
-  version: "1.0.41",
-  description:
-    " A solução API Pix Cobrança possibilita a geração dinâmica de QR Codes dinâmicos para iniciação de pagamentos e verificação de liquidações dos mesmos pelos lojistas e fornecedores (usuários recebedores).",
-  tags: ["Pix", "Pagamentos", "Recebimentos"],
 };
 
 export default function pix() {

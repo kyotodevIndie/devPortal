@@ -12,6 +12,9 @@ import ButtonDefault from "@/components/Atoms/ButtonDefault/ButtonDefault";
 
 interface ServicePageHeroProps {
   heroInfos: {
+    headerTitle: string;
+    headerDescription: string;
+    headerColor: string;
     title: string;
     version: string;
     description: string;
@@ -21,7 +24,7 @@ interface ServicePageHeroProps {
 
 export default function ServicePageHero({ heroInfos }: ServicePageHeroProps) {
   return (
-    <Box bg={"primary"} h={"90vh"}>
+    <Box bg={heroInfos.headerColor} h={"90vh"}>
       <Flex
         w={"full"}
         h={"50vh"}
@@ -32,7 +35,6 @@ export default function ServicePageHero({ heroInfos }: ServicePageHeroProps) {
       <HStack justify={"space-between"} align={"center"}>
         <VStack
           w={"full"}
-          // h={"30vh"}
           justify={"center"}
           align={"flex-start"}
           px={20}
@@ -44,11 +46,11 @@ export default function ServicePageHero({ heroInfos }: ServicePageHeroProps) {
             fontSize={"7xl"}
             lineHeight={"100px"}
           >
-            Pix BNB
+            {heroInfos.headerTitle}
           </Text>
           <Stack align={"flex-start"} spacing={6}>
             <Text color={"white"} fontWeight={400} fontSize={"3xl"}>
-              Transferências e pagamentos de forma prática e rápida.
+              {heroInfos.headerDescription}
             </Text>
           </Stack>
           <Box

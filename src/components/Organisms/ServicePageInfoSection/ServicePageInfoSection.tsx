@@ -94,13 +94,13 @@ export default function ServicePageInfoSection({
           <Flex flexWrap="wrap" gridGap={6} justify="center" mb={12}>
             <Card
               heading={"Automatização"}
-              icon={<Image src="assets/icons/login.svg" />}
+              icon={<Image src="assets/icons/likeIcon.svg" />}
               description={`A API PIX viabiliza o recebimento de cobranças de forma imediata, para por exemplo, pontos de venda em lojas e soluções para comércio eletrônico.`}
               href={"#"}
             />
             <Card
               heading={"Geração de QR Code"}
-              icon={<Image src="/assets/icons/login.svg" />}
+              icon={<Image src="/assets/icons/likeIcon.svg" />}
               description={
                 "O usuário recebedor poderá, via API Pix Cobrança, gera QR Code de cobrança para recebimento de recursos, bem como poderá verificar a liquidação delas dentre outras possibilidades."
               }
@@ -108,7 +108,7 @@ export default function ServicePageInfoSection({
             />
             <Card
               heading={"Agilidade"}
-              icon={<Image src="/assets/icons/login.svg" />}
+              icon={<Image src="/assets/icons/likeIcon.svg" />}
               description={
                 "Os pagamentos realizados via Pix são processados instantaneamente 24 horas por dia e 7 dias por semana."
               }
@@ -116,7 +116,7 @@ export default function ServicePageInfoSection({
             />
             <Card
               heading={"Controle"}
-              icon={<Image src="/assets/icons/login.svg" />}
+              icon={<Image src="/assets/icons/likeIcon.svg" />}
               description={
                 "A API PIX viabiliza o recebimento de cobranças de forma imediata, para por exemplo, pontos de venda em lojas e soluções para comércio eletrônico."
               }
